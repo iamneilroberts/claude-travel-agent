@@ -1,7 +1,0 @@
-Starting fresh travel MCP server...
-Entering main loop
-Received request: {"method": "initialize", "params": {"protocolVersion": "2024-11-05", "capabilities": {}, "clientInfo": {"name": "claude-ai", "version": "0.1.0"}}, "jsonrpc": "2.0", "id": 0}
-Received request: initialize with ID 0
-Handling initialize request with ID 0
-Sending response: {"jsonrpc": "2.0", "id": 0, "result": {"protocolVersion": "2024-03-19", "serverInfo": {"name": "Travel Tools MCP", "version": "1.0.0"}, "capabilities": {"tools": {"specification": "1.0.0"}}}}
-End of input, exiting
