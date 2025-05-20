@@ -1,0 +1,10 @@
+LICENSE
+README.md
+env.py
+main.py
+pyproject.toml
+s3_mcp.egg-info/PKG-INFO
+s3_mcp.egg-info/SOURCES.txt
+s3_mcp.egg-info/dependency_links.txt
+s3_mcp.egg-info/requires.txt
+s3_mcp.egg-info/top_level.txt

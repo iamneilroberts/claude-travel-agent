@@ -1,0 +1,107 @@
+--- MCP Server Log Started at 2025-05-19T21:36:24.072Z ---
+[2025-05-19T21:36:24.076Z] [INFO] Server starting up - Process ID: 184839
+[2025-05-19T21:36:24.076Z] [INFO] Node version: v22.12.0
+[2025-05-19T21:36:24.076Z] [INFO] Working directory: /home/neil/dev/claude-travel-chat
+[2025-05-19T21:36:24.076Z] [INFO] Module path: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist
+[2025-05-19T21:36:24.076Z] [INFO] Using transport: stdio
+[2025-05-19T21:36:24.076Z] [INFO] Command-line arguments: ["/usr/local/bin/node","/home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist/index.js","--transport=stdio"]
+[2025-05-19T21:36:24.076Z] [INFO] Loaded configuration from /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/config.json
+[2025-05-19T21:36:24.076Z] [DEBUG] Configuration: {
+  "server": {
+    "name": "Claude Custom Prompts",
+    "version": "1.0.0",
+    "port": 9090
+  },
+  "prompts": {
+    "file": "promptsConfig.json",
+    "registrationMode": "id"
+  },
+  "transports": {
+    "default": "stdio",
+    "sse": {
+      "enabled": false
+    },
+    "stdio": {
+      "enabled": true
+    },
+    "http": {
+      "enabled": true
+    }
+  },
+  "logging": {
+    "directory": "./logs",
+    "level": "info"
+  }
+}
+[2025-05-19T21:36:24.083Z] [INFO] Loaded 29 prompts and 12 categories from /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/promptsConfig.json
+[2025-05-19T21:36:24.083Z] [INFO] [TRAVEL_DEBUG] After all imports, total promptsData length: 29. Travel assistant prompts specifically: 3
+[2025-05-19T21:36:24.085Z] [INFO] Converting 29 markdown prompts to JSON structure...
+[2025-05-19T21:36:24.087Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/general/friendly_greeting.md (original filePath: prompts/general/friendly_greeting.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.089Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/general/tool_assistant.md (original filePath: prompts/general/tool_assistant.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.090Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: //test_prompt_general.md (original filePath: //test_prompt_general.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.091Z] [ERROR] Error loading prompt file //test_prompt_general.md: {"errno":-2,"code":"ENOENT","syscall":"open","path":"//test_prompt_general.md"}
+[2025-05-19T21:36:24.092Z] [ERROR] Error converting prompt //test_prompt_general: {"errno":-2,"code":"ENOENT","syscall":"open","path":"//test_prompt_general.md"}
+[2025-05-19T21:36:24.092Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/code/code_review.md (original filePath: prompts/code/code_review.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.093Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/analysis/content_analysis.md (original filePath: prompts/analysis/content_analysis.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.093Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/analysis/deep_analysis.md (original filePath: prompts/analysis/deep_analysis.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.096Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/analysis/progressive_research.md (original filePath: prompts/analysis/progressive_research.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.097Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/analysis/note_refinement.md (original filePath: prompts/analysis/note_refinement.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.097Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/analysis/note_integration.md (original filePath: prompts/analysis/note_integration.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.098Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/analysis/content_analysis_chain.md (original filePath: prompts/analysis/content_analysis_chain.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.099Z] [DEBUG] Loaded chain with 4 steps from prompts/analysis/content_analysis_chain.md
+[2025-05-19T21:36:24.099Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/analysis/query_refinement.md (original filePath: prompts/analysis/query_refinement.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.100Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/analysis/test_analyzer.md (original filePath: prompts/analysis/test_analyzer.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.103Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/education/explain_concept.md (original filePath: prompts/education/explain_concept.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.104Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/education/markdown_notebook.md (original filePath: prompts/education/markdown_notebook.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.104Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/education/video_study_guide.md (original filePath: prompts/education/video_study_guide.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.105Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/development/coding_solution_chain.md (original filePath: prompts/development/coding_solution_chain.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.105Z] [DEBUG] Loaded chain with 2 steps from prompts/development/coding_solution_chain.md
+[2025-05-19T21:36:24.105Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/development/expert_code_implementation.md (original filePath: prompts/development/expert_code_implementation.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.105Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/research/deep_research.md (original filePath: prompts/research/deep_research.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.106Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/research-tools/deep_research_chain.md (original filePath: prompts/research-tools/deep_research_chain.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.106Z] [DEBUG] Loaded chain with 6 steps from prompts/research-tools/deep_research_chain.md
+[2025-05-19T21:36:24.106Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/research-tools/topic-exploration.md (original filePath: prompts/research-tools/topic-exploration.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.107Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/research-tools/research-planning.md (original filePath: prompts/research-tools/research-planning.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.107Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/research-tools/information-gathering.md (original filePath: prompts/research-tools/information-gathering.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.108Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/research-tools/critical-analysis.md (original filePath: prompts/research-tools/critical-analysis.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.108Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/research-tools/synthesis-integration.md (original filePath: prompts/research-tools/synthesis-integration.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.109Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/research-tools/report-generation.md (original filePath: prompts/research-tools/report-generation.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.110Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/obsidian/vault_note_placement.md (original filePath: prompts/obsidian/vault_note_placement.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.112Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/travel_assistant/core_system_instructions.md (original filePath: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/travel_assistant/core_system_instructions.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.113Z] [ERROR] Error loading prompt file /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/travel_assistant/core_system_instructions.md: {}
+[2025-05-19T21:36:24.113Z] [ERROR] Error converting prompt travelbot: {}
+[2025-05-19T21:36:24.113Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/travel_assistant/travel_agent_help.md (original filePath: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/travel_assistant/travel_agent_help.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.113Z] [INFO] [LOAD_PROMPT_FILE_DEBUG] Attempting to load markdown from: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/travel_assistant/core_system_instructions.md (original filePath: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/travel_assistant/core_system_instructions.md, __dirname: /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/dist)
+[2025-05-19T21:36:24.114Z] [ERROR] Error loading prompt file /home/neil/dev/claude-travel-chat/servers/claude-prompts-mcp/server/prompts/travel_assistant/core_system_instructions.md: {}
+[2025-05-19T21:36:24.114Z] [ERROR] Error converting prompt core_system_prompt: {}
+[2025-05-19T21:36:24.117Z] [INFO] Successfully converted 26 prompts
+[2025-05-19T21:36:24.117Z] [INFO] Using prompt registration mode: id
+[2025-05-19T21:36:24.117Z] [INFO] Registered prompt with ID: friendly_greeting
+[2025-05-19T21:36:24.118Z] [INFO] Registered prompt with ID: tool_assistant
+[2025-05-19T21:36:24.118Z] [INFO] Registered prompt with ID: code_review
+[2025-05-19T21:36:24.118Z] [INFO] Registered prompt with ID: content_analysis
+[2025-05-19T21:36:24.118Z] [INFO] Registered prompt with ID: deep_analysis
+[2025-05-19T21:36:24.118Z] [INFO] Registered prompt with ID: progressive_research
+[2025-05-19T21:36:24.118Z] [INFO] Registered prompt with ID: note_refinement
+[2025-05-19T21:36:24.118Z] [INFO] Registered prompt with ID: note_integration
+[2025-05-19T21:36:24.118Z] [INFO] Registered prompt with ID: content_analysis_chain
+[2025-05-19T21:36:24.118Z] [INFO] Registered prompt with ID: query_refinement
+[2025-05-19T21:36:24.118Z] [INFO] Registered prompt with ID: test_analyzer
+[2025-05-19T21:36:24.118Z] [INFO] Registered prompt with ID: explain_concept
+[2025-05-19T21:36:24.118Z] [INFO] Registered prompt with ID: markdown_notebook
+[2025-05-19T21:36:24.118Z] [INFO] Registered prompt with ID: video_study_guide
+[2025-05-19T21:36:24.118Z] [INFO] Registered prompt with ID: coding_solution_chain
+[2025-05-19T21:36:24.118Z] [INFO] Registered prompt with ID: expert_code_implementation
+[2025-05-19T21:36:24.118Z] [INFO] Registered prompt with ID: deep_research
+[2025-05-19T21:36:24.118Z] [INFO] Registered prompt with ID: deep_research_chain
+[2025-05-19T21:36:24.118Z] [INFO] Registered prompt with ID: topic-exploration
+[2025-05-19T21:36:24.119Z] [INFO] Registered prompt with ID: research-planning
+[2025-05-19T21:36:24.119Z] [INFO] Registered prompt with ID: information-gathering
+[2025-05-19T21:36:24.119Z] [INFO] Registered prompt with ID: critical-analysis
+[2025-05-19T21:36:24.119Z] [INFO] Registered prompt with ID: synthesis-integration
+[2025-05-19T21:36:24.119Z] [INFO] Registered prompt with ID: report-generation
+[2025-05-19T21:36:24.119Z] [INFO] Registered prompt with ID: vault_note_placement
+[2025-05-19T21:36:24.119Z] [INFO] Registered prompt with ID: help
+[2025-05-19T21:36:24.119Z] [INFO] Starting server with STDIO transport
+[2025-05-19T21:36:24.119Z] [INFO] STDIO transport connected successfully
+[2025-05-19T21:36:24.120Z] [INFO] Server process memory usage: {"rss":76115968,"heapTotal":18407424,"heapUsed":12917816,"external":2585486,"arrayBuffers":482444}

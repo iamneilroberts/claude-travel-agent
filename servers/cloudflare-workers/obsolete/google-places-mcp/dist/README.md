@@ -1,0 +1,1 @@
+This folder contains the built output assets for the worker "google-places-mcp" generated at 2025-05-19T20:14:57.017Z.

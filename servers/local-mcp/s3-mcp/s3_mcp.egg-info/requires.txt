@@ -1,0 +1,4 @@
+boto3>=1.37.33
+boto3-stubs[essential]>=1.37.33
+environs>=14.1.1
+fastmcp>=2.1.0
